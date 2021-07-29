@@ -29,8 +29,8 @@
 // p2
 // END
 //FILE: annotations.kt
-annotation class Anno
-annotation class Bnno
+annotation class Anno(val stringValue: String = "MyDefaultString")
+annotation class Bnno(val kClassValue: kotlin.reflect.KClass<*> = Bnno::class)
 
 //FILE: Foo.kt
 @file:Bnno
